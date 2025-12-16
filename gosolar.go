@@ -27,7 +27,7 @@ func NewClient(config *Config) (*Client, error) {
 		return nil, err
 	}
 
-	baseURL, err := url.Parse(fmt.Sprintf("https://%s:17778/SolarWinds/InformationService/v3/Json/", config.Host))
+	baseURL, err := url.Parse(fmt.Sprintf("https://%s:17774/SolarWinds/InformationService/v3/Json/", config.Host))
 	if err != nil {
 		return nil, WrapError(err, ErrorTypeValidation, "new_client", "invalid host URL")
 	}
