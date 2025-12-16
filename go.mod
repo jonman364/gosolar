@@ -1,4 +1,4 @@
-module github.com/mrxinu/gosolar
+module github.com/jonman364/gosolar
 
 go 1.21
 
